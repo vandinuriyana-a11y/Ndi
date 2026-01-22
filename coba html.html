@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Website Interaktif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Interaktif Sekolah</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')">Beranda</a></li>
+                <li><a href="#about" onclick="showPage('about')">Tentang</a></li>
+                <li><a href="#contact" onclick="showPage('contact')">Kontak</a></li>
+                <li><a href="#login" onclick="showPage('login')">Login</a></li>
+                <li><a href="#register" onclick="showPage('register')">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+    <section id="home" class="page">
+        <h2>Beranda</h2>
+        <p>Selamat datang di halaman beranda kami.</p>
+    </section>
+    <section id="about" class="page">
+        <h2>Tentang</h2>
+        <p>Informasi tentang sekolah kami.</p>
+    </section>
+    <section id="contact" class="page">
+        <h2>Kontak</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut.</p>
+    </section>
+    <section id="login" class="page">
+        <h2>Login</h2>
+        <form onsubmit="return login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+      <section id="register" class="page">
+  <h2>Register</h2>
+  <form onsubmit="return register()">
+    <label for="new-username">Username:</label>
+    <input type="text" id="new-username" name="new-username" required>
+    <label for="new-password">Password:</label>
+    <input type="password" id="new-password" name="new-password" required>
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Sekolah Kami</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
